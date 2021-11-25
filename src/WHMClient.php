@@ -3,7 +3,7 @@
 namespace PreviewTechs\cPanelWHM;
 
 use GuzzleHttp\Psr7\Request;
-use Http\Adapter\Guzzle6\Client;
+use GuzzleHttp\Client;
 use Http\Client\HttpClient;
 use PreviewTechs\cPanelWHM\Exceptions\ClientExceptions;
 
