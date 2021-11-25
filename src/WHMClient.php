@@ -4,7 +4,6 @@ namespace PreviewTechs\cPanelWHM;
 
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\Client;
-use Http\Client\HttpClient;
 use PreviewTechs\cPanelWHM\Exceptions\ClientExceptions;
 
 class WHMClient
@@ -53,21 +52,20 @@ class WHMClient
         $this->whmHost = $whmHost;
         $this->whmPort = $whmPort;
 
-        $client = Client::createWithConfig(['timeout' => 120]);
+        $client = new Client(['timeout' => 120]);
         $this->setHttpClient($client);
         $this->httpClient = $this->getHttpClient();
     }
 
     /**
      *
-     * @param HttpClient $client
+     * @param $client
      *
      * @return WHMClient
      */
-    public function setHttpClient(HttpClient $client)
+    public function setHttpClient($client)
     {
         $this->httpClient = $client;
-
         return $this;
     }
 
