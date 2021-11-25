@@ -12,7 +12,7 @@ Manage your WHM/cPanel server with this PHP library. Simple to use. With this PH
 You can install this library with composer.
 
 ```bash
-composer require previewtechs/cpanel-whm-api:dev-master
+composer require musoftware/cpanel-whm-api:dev-master
 ```
 
 ### Usage
