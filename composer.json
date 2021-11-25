@@ -13,7 +13,6 @@
         "php": ">=5.5",
         "ext-curl": "*",
         "guzzlehttp/psr7": "^1.4",
-        "php-http/client-implementation": "^1.0",
         "guzzlehttp/guzzle": "~7.0"
     },
     "autoload": {
